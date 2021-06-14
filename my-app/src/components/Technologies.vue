@@ -1,6 +1,5 @@
 <template>
     <div class="technologies">
-
         <div class = "nodejs">
             <img src="../assets/nodejs.png" alt="Profile photo" class="image" />
         </div>
@@ -37,6 +36,7 @@ export default {
 .technologies {
     display: flex;
     text-align: center;
+    padding-top: 20px;
 }
 
 img {
@@ -49,23 +49,53 @@ img {
     flex: calc(1200/734);
 }
 
+.nodejs:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
 .vuejs {
     flex: calc(500/300);
+}
+
+.vuejs:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
 .reactjs {
     flex: calc(1613/501);
 }
 
+.reactjs:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
 .cpp {
     flex: 1;
+}
+
+.cpp:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
 .netcore {
     flex: 1;
 }
 
+.netcore:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
 .java {
     flex: calc(4000/2500);
+}
+
+.java:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 </style>

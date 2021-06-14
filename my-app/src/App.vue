@@ -2,18 +2,21 @@
   <div id="app">
     <Intro />
     <Technologies />
+    <Contact />
   </div>
 </template>
 
 <script>
 import Intro from "./components/Intro.vue";
 import Technologies from "./components/Technologies.vue";
+import Contact from "./components/Contact.vue";
 
 export default {
   name: "App",
   components: {
     Intro,
-    Technologies
+    Technologies,
+    Contact
   },
 };
 </script>

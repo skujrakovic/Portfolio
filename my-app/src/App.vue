@@ -1,78 +1,34 @@
 <template>
   <div id="app">
-    <div class="container">
-      <img src="./assets/photo.jpg" alt="Profile photo" class="image">
-      <div class="middle">
-      <div class="text">Samija Kujraković</div>
-    </div>
-  </div>
-    <Intro/>
+    <Intro />
+    <Technologies />
   </div>
 </template>
 
 <script>
-import Intro from './components/Intro.vue'
+import Intro from "./components/Intro.vue";
+import Technologies from "./components/Technologies.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    Intro
-  }
-}
+    Intro,
+    Technologies
+  },
+};
 </script>
 
 <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-  background-color: lavender;
-}
-</style>
-
-<style scoped>
-.container {
-  position: relative;
-  width: 50%;
-  margin: auto;
-}
-
-.image {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
-  text-align: center;
-  border-radius: 50%;
-}
-
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%)
-}
-
-.container:hover .image {
-  opacity: 0.3;
-}
-
-.container:hover .middle {
-  opacity: 1;
-}
-
-.text {
-  background-color:blueviolet;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
+  padding: 30px;
+  font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
 }
 </style>

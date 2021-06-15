@@ -1,28 +1,34 @@
 <template>
+    <div class = "maintech">
+        <div class = "htmlcssjs">
+            <img src = "../assets/htmlcssjs.png" alt = "HTML, CSS and JS" class = "image first" />
+        </div>
     <div class="technologies">
         <div class = "nodejs">
-            <img src="../assets/nodejs.png" alt="Profile photo" class="image" />
+            <img src="../assets/nodejs.png" alt="Node.js" class="image" />
         </div>
 
         <div class = "vuejs">
-            <img src="../assets/vuejs.png" alt="Profile photo" class="image" />
+            <img src="../assets/vuejs.png" alt="Vue.js" class="image" />
         </div>
 
         <div class = "reactjs">
-            <img src="../assets/reactjs.png" alt="Profile photo" class="image" />
+            <img src="../assets/reactjs.png" alt="React.js" class="image" />
         </div>
 
         <div class = "cpp">
-            <img src="../assets/c++.png" alt="Profile photo" class="image" />
+            <img src="../assets/c++.png" alt="C++" class="image" />
         </div>
 
         <div class = "java">
-        <img src="../assets/Java-Logo.png" alt="Profile photo" class="image" />
+        <img src="../assets/Java-Logo.png" alt="Java" class="image" />
         </div>
 
         <div class = "netcore">
-        <img src="../assets/netcore.png" alt="Profile photo" class="image" />
+        <img src="../assets/netcore.png" alt="ASP .NET Core" class="image" />
         </div>
+    </div>
+
     </div>
 </template>
 
@@ -33,6 +39,22 @@ export default {
 </script>
 
 <style scoped>
+.maintech {
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.first {
+    height: 100px;
+    width: auto;
+}
+
+.first:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
 .technologies {
     display: flex;
     text-align: center;

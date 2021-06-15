@@ -1,5 +1,8 @@
 <template>
   <div class="kontakt">
+    <div class="email-forma">
+      <EmailForm />
+    </div>
     <div
       class="badge-base LI-profile-badge"
       data-locale="en_US"
@@ -18,8 +21,12 @@
 </template>
 
 <script>
+import EmailForm from "./EmailForm.vue";
 export default {
-  name: "Contact"
+  name: "Contact",
+  components: {
+    EmailForm,
+  },
 };
 </script>
 
@@ -30,4 +37,12 @@ export default {
   text-align: center;
 }
 
+.email-forma {
+  width: 70%;
+}
+
+.badge-base {
+  width: 30%;
+  text-align: center;
+}
 </style>

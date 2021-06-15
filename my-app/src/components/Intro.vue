@@ -23,7 +23,7 @@ export default {
 <style scoped>
 .introduction {
     background-color: #800020;
-    height: 95vh;
+    height: 96vh;
     position: relative;
     backface-visibility: hidden;
     clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 50% 100%, 0% 60%);

@@ -22,7 +22,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .introduction {
-    background-color: #800020;
+    background-color: #c65f5a;
     height: 96vh;
     position: relative;
     backface-visibility: hidden;
@@ -33,6 +33,7 @@ h1 {
   margin: 40px 0 0;
   letter-spacing: 15px;
   animation: move-up 2s ease-out;
+  animation-fill-mode: backwards;
 }
 
 p {
